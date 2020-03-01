@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/log4j.properties,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/log4j.properties)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/application.properties,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/application.properties)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/storage/input/Workbook3.csv,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/storage/input/Workbook3.csv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/storage/input/Workbook2.csv,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/storage/input/Workbook2.csv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/storage/input/Workbook2.prn,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/storage/input/Workbook2.prn)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/storage/output/record-table.css,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/storage/output/record-table.css)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/kanchankhatri/Documents/workspace/FileParser/src/main/resources/storage/output/CreditRecords2.html,/Users/kanchankhatri/Documents/workspace/FileParser/target/scala-2.12/classes/storage/output/CreditRecords2.html)[0m
