@@ -1,0 +1,11 @@
+[0m[[0m[0minfo[0m] [0m[0mrunning (fork) com.eb.renderview.Main [0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:25,003 INFO  com.eb.renderview.Main$                                       - Input Files:[0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:25,416 INFO  com.eb.renderview.Main$                                       - /Users/kanchankhatri/Documents/workspace/RecordsParser/target/scala-2.12/classes/storage/input/Workbook2.csv[0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:26,186 WARN  org.apache.hadoop.util.NativeCodeLoader                       - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable[0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:32,167 WARN  org.apache.spark.sql.execution.datasources.csv.CSVDataSource  - CSV header does not conform to the schema.[0m
+[0m[[0m[0minfo[0m] [0m[0m Header: Name, Address, Postcode, Phone, Credit Limit, Birthday[0m
+[0m[[0m[0minfo[0m] [0m[0m Schema: name, address, postcode, phone, credit_limit, birthday[0m
+[0m[[0m[0minfo[0m] [0m[0mExpected: credit_limit but found: Credit Limit[0m
+[0m[[0m[0minfo[0m] [0m[0mCSV file: file:///Users/kanchankhatri/Documents/workspace/RecordsParser/target/scala-2.12/classes/storage/input/Workbook2.csv[0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:32,276 INFO  com.eb.renderview.CreditRecordsManager                        - Html File is generated at: file:////Users/kanchankhatri/Documents/workspace/RecordsParser/src/main/resources/storage/output/CreditRecords.html[0m
+[0m[[0m[0minfo[0m] [0m[0m02:13:32,276 INFO  com.eb.renderview.Main$                                       - All Files are processed[0m

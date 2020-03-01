@@ -1,4 +1,3 @@
-[warn] insecure HTTP request is deprecated 'http://repo.typesafe.com/typesafe/releases/'; switch to HTTPS or opt-in as ("Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/").withAllowInsecureProtocol(true)
 [debug] "not up to date. inChanged = true, force = false
 [debug] Updating ProjectRef(uri("file:/Users/kanchankhatri/Documents/workspace/RecordsParser/"), "recordsparser")...
 [debug] Done updating ProjectRef(uri("file:/Users/kanchankhatri/Documents/workspace/RecordsParser/"), "recordsparser")

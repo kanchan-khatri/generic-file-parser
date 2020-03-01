@@ -23,8 +23,8 @@ object Main {
       Array(getClass.getResource(appConfig("file.input.default_path")).getPath)
     }
 
-    LOG.debug("Input Files:")
-    inputFiles.map(LOG.debug)
+    LOG.info("Input Files:")
+    inputFiles.map(LOG.info)
 
     new CreditRecordsManager().parseRecordsToHtml(inputFiles, outputDir)
 

@@ -1,4 +1,2 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/kanchankhatri/Documents/workspace/FileParser/src/main/scala/com/eb/renderhtml/Monitor.scala:3:26: imported `CreditRecordsManager' is permanently hidden by definition of class CreditRecordsManager in package renderhtml[0m
-[0m[[0m[33mwarn[0m] [0m[0mimport com.eb.renderhtml.CreditRecordsManager[0m
-[0m[[0m[33mwarn[0m] [0m[0m                         ^[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[0mdebug[0m] [0m[0mAcquiring lock on file /Users/kanchankhatri/Documents/workspace/RecordsParser/project/target/.sbt-compilation-infos/recordsparser-compile/.sbt-idea-lock ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mReleasing lock on file /Users/kanchankhatri/Documents/workspace/RecordsParser/project/target/.sbt-compilation-infos/recordsparser-compile/.sbt-idea-lock.[0m
