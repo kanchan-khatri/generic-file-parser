@@ -20,7 +20,9 @@ object Main {
     val inputFiles: Array[String] = if (args.length > 1) {
       args
     } else {
-      Array(getClass.getResource(appConfig("file.input.default_path")).getPath)
+//      Array(getClass.getResource(appConfig("file.input.default_path")).getPath)
+      appConfig("file.input.default_path").split(",")
+        .map(f=>getClass.getResource(f).getPath)
     }
 
     LOG.info("Input Files:")

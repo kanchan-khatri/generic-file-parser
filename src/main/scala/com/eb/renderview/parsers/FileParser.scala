@@ -63,9 +63,9 @@ abstract class FileParser(path: String) extends FileTerms {
   }
 
   def parse[T <: Product : TypeTag](): Option[List[T]] = {
-    var df = createDataFrame[T]
+    var df:Option[DataFrame] = createDataFrame[T]
     if(df.isDefined && df.nonEmpty ) {
-      var records = formatDFRow[T](createDataFrame[T].get)
+      var records = formatDFRow[T](df.get)
       spark.stop()
       records
     } else {

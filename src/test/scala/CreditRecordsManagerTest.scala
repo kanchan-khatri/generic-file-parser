@@ -14,7 +14,6 @@ class CreditRecordsManagerTest extends FunSuite {
     5. File Not Found Path
     6. "File Not Found Argument parameter" not terminating the Flow for other file
    */
-
   test("CreditRecordsManager.parseRecords") {
     //input test csv paths
     val csvFilePath1 = getClass.getClassLoader.getResource("storage/input/Workbook2-testcases.csv").getPath
@@ -31,6 +30,16 @@ class CreditRecordsManagerTest extends FunSuite {
       )
     ).toString()) {
       new CreditRecordsManager().parseRecords(Array(csvFilePath1, csvFilePath2, csvFilePath1)).toString()
+    }
+
+    val csvFilePath3 = getClass.getClassLoader.getResource("storage/input/Workbook2-testcases.prn").getPath
+    assertResult(List(
+      (csvFilePath3, List(
+        CreditRecord("abc", "addr1", "p1", "9890", "10000", "19870101"),
+        CreditRecord("def", "addr 2", "p2", "", "10.5", "19651203"))
+      )
+    ).toString()) {
+      new CreditRecordsManager().parseRecords(Array(csvFilePath3)).toString()
     }
   }
 

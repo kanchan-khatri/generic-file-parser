@@ -18,8 +18,10 @@ class OutputRendererTest extends FunSuite with FileTerms{
     val expectedOutput:String = "<html>\n<head> <title>Credit Records</title>" +
       "<link rel=\"stylesheet\" href=\"record-table.css\"></head>" +
       "<body>\n<div align=\"center\"><span>Records from File:"+csvFilePath1+"</span>" +
-      "<table border='1'><tr><td>abc</td>\n<td>addr1</td>\n<td>01/01/1987</td>\n<td>10000</td>\n<td>9890</td>\n<td>p1</td></tr>\n" +
-      "<tr><td>def</td>\n<td>addr2</td>\n<td>03/12/1965</td>\n<td>10.5</td>\n<td>null</td>\n<td>p2</td></tr>" +
+      "<table border='1'>\n<tr><th>Name</th>\n<th>Address</th>\n<th>Postcode</th>\n<th>Phone</th>\n" +
+      "<th>Credit Limit</th>\n<th>Birthday</th>" +
+      "</tr>\n<tr><td>abc</td>\n<td>addr1</td>\n<td>p1</td>\n<td>9890</td>\n<td>10000</td>\n<td>01/01/1987</td></tr>\n" +
+      "<tr><td>def</td>\n<td>addr2</td>\n<td>p2</td>\n<td>null</td>\n<td>10.5</td>\n<td>03/12/1965</td></tr>" +
       "</table></div>\n</body></html>"
     assert(OutputRenderer.generateHtmlTable(List(inputFileRecord), title) === expectedOutput)
   }

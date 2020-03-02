@@ -16,9 +16,12 @@ object TableString extends FileTerms {
 
   def getCreditRows(creditRecords: List[CreditRecord]): String = {
     if (creditRecords != null) {
-      creditRecords.map(c=>
-        getRow(List(c.name, c.address, c.birthday, c.credit_limit, c.phone, c.postcode))
+      var headers: List[String] = List("Name","Address","Postcode", "Phone", "Credit Limit", "Birthday")
+      var headersHtml:String = getHeader(headers)
+      var rowString: String = creditRecords.map(c=>
+        getRow(List(c.name, c.address, c.postcode, c.phone, c.credit_limit, c.birthday ))
       ).mkString("\n")
+      (headersHtml+rowString)
     } else {
       "Unable to parse creditRecords".mkString("<tr><td>","","</td></tr>\n")
     }
@@ -33,7 +36,7 @@ object TableString extends FileTerms {
   }
 
   def getHeader(row: ARow): String = {
-    row.mkString("<th><td>","</td>\n<td>","</td></th>")
+    row.mkString("\n<tr><th>","</th>\n<th>","</th></tr>\n")
   }
 }
 
