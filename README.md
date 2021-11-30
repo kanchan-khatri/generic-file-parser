@@ -1,12 +1,12 @@
-# RecordsParser
+# GenericFileParser
 
 ## Summary
-RecordsParser is designed to parse the records from csv/prn file and transform the results to the generic record.
+GenericFileParser is designed to stream huge files and parse the records from csv/prn file and transform the results to the generic record.
 Transforming to generic record can help keep track of any generic record from several sources as mentioned in the problem statement.
 
 ## Library
 This repo is using apache.spark library to parse the records and to some extent transform them to the generic record.
-apache.spark gives many advantages other than just parsing which can also help in building fast poc products
+apache.spark gives many advantages other than just streaming huge files and parsing which can also help in building fast poc products
 apache.spark helps in achieving high performance streaming operations which can help dealing with large files
 
 ## Execution

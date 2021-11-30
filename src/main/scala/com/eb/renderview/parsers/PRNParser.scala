@@ -33,6 +33,10 @@ class PRNParser(path: String) extends FileParser(path: String){
   def createParsingStructureForPRN[T <: Product : TypeTag](inputDF: Dataset[String], schemaStructToUse: StructType):
       Option[List[T]] = {
     try {
+      var x = 2
+
+      var y = if(x>1) 3 else 4
+
       var columnNamesAndTheirLengths = collection.mutable.LinkedHashMap[String, Int]()
       val outputDF: mutable.ArraySeq[T] = inputDF.collect().zipWithIndex.map {
         case (line, index) =>
